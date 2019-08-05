@@ -39,4 +39,21 @@ public class Conta {
         titularDaConta = novoTitularConta;
     }
 
+    public void depositar(float quantiaDinheiro){
+        saldoDaConta += quantiaDinheiro;
+        System.out.println("Depósito realizado: seu novo saldo é " + saldoDaConta);
+    }
+
+    public void sacar(float quantiaDinheiro){
+        if (saldoDaConta >= quantiaDinheiro){
+            saldoDaConta -= quantiaDinheiro;
+            System.out.println("Saque realizado: seu novo saldo é " + saldoDaConta);
+        }
+        else {
+            System.out.println("Saldo insuficiente, ops!");
+        }
+    }
+
+
+
 }
