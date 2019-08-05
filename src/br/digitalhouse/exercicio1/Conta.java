@@ -6,15 +6,9 @@ public class Conta {
     private Cliente titularDaConta;
 
     //construtor específico
-    public Conta (int novoNumConta){
+    public Conta (int novoNumConta, float novoSaldoConta, Cliente novoTitularConta){
         numeroDaConta = novoNumConta;
-    }
-
-    public Conta(float novoSaldoConta){
         saldoDaConta = novoSaldoConta;
-    }
-
-    public Conta(Cliente novoTitularConta){
         titularDaConta = novoTitularConta;
     }
 
@@ -41,11 +35,8 @@ public class Conta {
         saldoDaConta = novoSaldoConta;
     }
 
-    public void setTitularDaConta(Cliente titularDaConta){
+    public void setTitularDaConta(Cliente novoTitularConta){
         titularDaConta = novoTitularConta;
-        //PAREI AQUI!!!
-    }
-
     }
 
 }
